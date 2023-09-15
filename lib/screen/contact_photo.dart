@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class contact_photo extends StatefulWidget {
-  const contact_photo({super.key});
+class PhotoScreen extends StatefulWidget {
+  const PhotoScreen({super.key});
 
   @override
-  State<contact_photo> createState() => _contact_photoState();
+  State<PhotoScreen> createState() => _PhotoScreenState();
 }
 
-class _contact_photoState extends State<contact_photo> {
+class _PhotoScreenState extends State<PhotoScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -52,18 +52,16 @@ class _contact_photoState extends State<contact_photo> {
                       alignment: Alignment.center,
                       children: [
                         Container(
-                          height: MediaQuery.of(context).size.height * 0.5,
-                          width: MediaQuery.of(context).size.width * 0.8,
+                          height: MediaQuery.of(context).size.height * 0.4,
+                          width: MediaQuery.of(context).size.width * 0.9,
                           color: Colors.white,
                         ),
                         CircleAvatar(
                           backgroundColor: Colors.grey.shade300,maxRadius:50,minRadius: 50,
                           child:Text("ADD",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: Colors.black),),
                         ),
-
                       ],
                     ),
-
                   ]
               ),
             ],

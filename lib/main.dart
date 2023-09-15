@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:resume_app/screen/home_screen.dart';
-import 'package:resume_app/utils/resume_routes.dart';
+import 'package:resume_app/utils/app_routes.dart';
 
 void main(){
 

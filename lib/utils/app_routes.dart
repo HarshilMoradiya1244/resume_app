@@ -7,9 +7,9 @@ import 'package:resume_app/screen/profile_screen.dart';
 
 Map<String,WidgetBuilder> screen_routes ={
 
-  '/' : (context) => home_screen(),
-  'profile':(context) => profile_screen(),
-  'contact':(context) => contact_screen(),
-  'contact_photo':(context) => contact_photo(),
+  '/' : (context) => HomeScreen(),
+  'profile':(context) => ProfileScreen(),
+  'contact':(context) => ContactScreen(),
+  'contact_photo':(context) => PhotoScreen(),
   'carrier':(context) => carrier_screen(),
 };

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class profile_screen extends StatefulWidget {
-  const profile_screen({super.key});
+class ProfileScreen extends StatefulWidget {
+  const ProfileScreen({super.key});
 
   @override
-  State<profile_screen> createState() => _profile_screenState();
+  State<ProfileScreen> createState() => _ProfileScreenState();
 }
 
-class _profile_screenState extends State<profile_screen> {
+class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -25,7 +25,7 @@ class _profile_screenState extends State<profile_screen> {
                     child: Column(
                       children: [
                         SizedBox(height: 40),
-                        Text(
+                        const Text(
                           "Resume Builder App",
                           style:
                               TextStyle(fontSize: 20, color: Colors.white),

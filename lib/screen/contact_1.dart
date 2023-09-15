@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class contact_screen extends StatefulWidget {
-  const contact_screen({super.key});
+class ContactScreen extends StatefulWidget {
+  const ContactScreen({super.key});
 
   @override
-  State<contact_screen> createState() => _contact_screenState();
+  State<ContactScreen> createState() => _ContactScreenState();
 }
 
-class _contact_screenState extends State<contact_screen> {
+class _ContactScreenState extends State<ContactScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -27,18 +27,18 @@ class _contact_screenState extends State<contact_screen> {
                     ),
                     Text(
                       "Resume Workspace",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold),
+                      style: TextStyle(color: Colors.white, fontSize: 25),
                     ),
-                    Row (
+                    Row(
                       children: [
                         InkWell(
                             onTap: () {
                               Navigator.pop(context, 'profile');
                             },
-                            child: Icon(Icons.arrow_back_ios_new,color: Colors.white,)),
+                            child: Icon(
+                              Icons.arrow_back_ios_new,
+                              color: Colors.white,
+                            )),
                       ],
                     ),
                     Spacer(),
@@ -51,10 +51,7 @@ class _contact_screenState extends State<contact_screen> {
                           ),
                           Text(
                             "Contact",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold),
+                            style: TextStyle(color: Colors.white, fontSize: 20),
                           ),
                           Spacer(),
                           InkWell(
@@ -63,14 +60,12 @@ class _contact_screenState extends State<contact_screen> {
                             },
                             child: InkWell(
                               onTap: () {
-                                Navigator.pushNamed(context,'contact_photo');
+                                Navigator.pushNamed(context, 'contact_photo');
                               },
                               child: Text(
                                 "Photo",
                                 style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold),
+                                    color: Colors.white, fontSize: 20),
                               ),
                             ),
                           ),
@@ -91,7 +86,7 @@ class _contact_screenState extends State<contact_screen> {
                   color: Colors.white,
                   child: Column(
                     children: [
-                      TextField(
+                      const TextField(
                         decoration: InputDecoration(
                             hintText: "Name",
                             prefixIcon: Icon(
@@ -99,10 +94,10 @@ class _contact_screenState extends State<contact_screen> {
                               size: 30,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
-                      TextField(
+                      const TextField(
                         keyboardType: TextInputType.emailAddress,
                         decoration: InputDecoration(
                             hintText: "Email",
@@ -111,10 +106,10 @@ class _contact_screenState extends State<contact_screen> {
                               size: 30,
                             )),
                       ),
-                      SizedBox(
+                      const  SizedBox(
                         height: 10,
                       ),
-                      TextField(
+                      const TextField(
                         keyboardType: TextInputType.phone,
                         decoration: InputDecoration(
                             hintText: "Phone",
@@ -123,10 +118,10 @@ class _contact_screenState extends State<contact_screen> {
                               size: 30,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
-                      TextField(
+                      const TextField(
                         decoration: InputDecoration(
                             hintText: "Address (Street,Building No)",
                             prefixIcon: Icon(
@@ -134,19 +129,19 @@ class _contact_screenState extends State<contact_screen> {
                               size: 30,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
-                      TextField(
+                      const  TextField(
                         decoration: InputDecoration(
-                            hintText: "           Address Line 2"),
+                            hintText: " \t \t Address Line 2"),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 10,
                       ),
-                      TextField(
+                      const TextField(
                         decoration: InputDecoration(
-                            hintText: "           Address Line 3"),
+                            hintText: " \t \t Address Line 3"),
                       ),
                     ],
                   ),
@@ -159,4 +154,3 @@ class _contact_screenState extends State<contact_screen> {
     );
   }
 }
-
